@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Introduction to CSS </title>
+  <style> body{background-color: #e5e5e5}</style>
+  <link rel="stylesheet" type="text/css" href="intro.css">
+<!--   <style> body{background-color: green}</style> -->
+
+</head>
+<body>
+
+<h1>Why CSS?</h1>
+
+  <h3>Inline Styling</h3>
+   <p>It is possible to style each HTML element with inline styling. For example, 
+
+<div>
+  <p><code> &lt[element name] STYLE="[CSS property]:[property value]"&gt </code><p>
+</div>
+
+<p>However, this is not always the best approach. In order to make changes, one would have to go through the entire HTML markup and change the styling for each individual element.</p>
+
+<p>A better approach would be to only use inline styling for overriding styling rules on a case-by-case basis. (Or just don't do it. Seriously.)</p>
+
+<h2>Enter CSS!</h2>
+
+<p>CSS (Cascading Style Sheets) allow web developers to separate the design aspects of a web site from the HTML markup.</p>
+
+<p>This is considered a best practice in development, and there are a couple of different approaches.</p>
+
+<h3>Embedded Styling</h3>
+<p>Embedded styling allows the presentation rules to be embedded into the HTML <code>&lthead&gt.</p>
+<p>Notice the "presentation rule" located in the <code> &lthead&gt tag, just under the &lttitle&gt.</code> You'll see the following code, which gives us this great grey background:
+<div id="presentation_rule">
+  <code>&ltstyle&gt body{background: #d3d3d3}&lt/style&gt</code>
+</div>
+
+
+</body>
+</html>
