@@ -9,13 +9,13 @@
 </head>
 <body>
 
-<h1>Why CSS?</h1>
+<h1>Styling Methods</h1>
 
   <h3>Inline Styling</h3>
    <p>It is possible to style each HTML element with inline styling. For example, 
 
 <div>
-  <p><code> &lt[element name] STYLE="[CSS property]:[property value]"&gt </code><p>
+  <code> &lt[element name] STYLE="[CSS property]:[property value]"&gt </code>
 </div>
 
 	<p>However, this is not always the best approach. In order to make changes, one would have to go through the entire HTML markup and change the styling for each individual element.</p>
@@ -30,7 +30,7 @@
 
 <h3>Embedded Styling</h3>
 	<p>Embedded styling allows the presentation rules to be embedded into the HTML <code>&lthead&gt.</p>
-	<p>Notice the "presentation rule" located in the <code> &lthead&gt tag, just under the &lttitle&gt.</code> You'll see the following code, which gives us this great grey background:
+	<p>Notice the "presentation rule" located in the <code> &lthead&gt</code> tag, just under the &lttitle&gt.</code> You'll see the following code, which gives us this great grey background:
 	<div id="presentation_rule">
 	  <code>&ltstyle&gt body{background: #d3d3d3}&lt/style&gt</code>
 	</div>
@@ -48,8 +48,8 @@
 <h3>Higher Precedence</h3>
     <p>One important thing to consider is the precedence given to these methods. Because specificity matters in how styling is rendered (more on that later), embedded styles have a higher precedence than external styles. So, if there are equivalent rules given, the embedded style will take precedence over the external. Likewise, inline styling will have a higher precedence over embedded styling.</p>
 
-    <h2>Order of precedence, from highest to lowest</h2>
-    <div>INLINE STYLING &gt Embedded Styling &gt External Style Sheet</div>
+    <h4>Order of precedence, from highest to lowest</h4>
+    <div>Inline Styling &gt Embedded Styling &gt External Style Sheet</div>
 
 </body>
 </html>

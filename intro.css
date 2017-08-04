@@ -11,10 +11,18 @@ h2{
   font-size: 1.25em;
 }
 
+h4{
+	font-style: italic;
+}
+
 code{
 	font-size: 13px;
 }
 
 p{
 	text-indent: 18px;
+}
+
+body{
+	margin-bottom: 30px;
 }
