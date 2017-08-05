@@ -1,5 +1,8 @@
+body {
+  background-color: #9cc1a1;
+}
 
-div{
+div code, a{
   background-color: #f7f7f7;
   text-align: center;
   margin: 10px;
@@ -25,4 +28,8 @@ p{
 
 body{
   margin-bottom: 30px;
+}
+
+.boldText{
+  font-weight: bolder;
 }
