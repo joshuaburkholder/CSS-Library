@@ -10,9 +10,7 @@
 
 <p><span class="boldText">Style rules</span> follow a simple format:</p>
   <div><code>
-    selector {
-      name: value;
-    }
+    selector { name: value; }
   </code></div>
 
 <p>You can have multiple name/value pairs for in each rule.</p>
@@ -24,40 +22,40 @@ selector {
 </code></div>
 
 <p><span class="boldText">Selectors</span> can be HTML elements, an given class, or an assigned id.</p>
-<ul>
-  <li>HTML selectors will select all of a given HTML element on a page.
-    For instance, the following styling rule will change the background color of all the divs on a page to the color value given:
+  <ul>
+    <li>
+      <p><span class="boldText">HTML element selectors</span> will select all of a given HTML element on a page.</p>
+      <p>For instance, the following styling rule will change the background color of all the divs on a page to the color value given:</p>
+        <div><code>
+          div {
+            background-color: #c13c3c
+          }
+        </code></div>
+    </li>
 
-  <code>
-    div {
-      background-color: #c13c3c
-    }
-  </code>
-  </li>
+    <li>
+    <p><span class="boldText">Class selectors</span> (indicated by a preceding .) will find any element with that class:</p>
+      <div><code>
+        .redText {
+          color: red;
+        }
+      </code></div>
+    </li>
 
-  <li>
-  Class selectors (indicated by a preceding .) will find any element with that class:
+    <li>
+    <p><span class="boldText">ID selectors</span> (deonted with a #) will find an element with that particular id:</p>
+      <div><code>
+      #thisDiv {
+      background-color: rgb(60, 179, 193);
+      }
+      </code></div>
+    </li>
+  </ul>
 
-  <code>
-    .redText {
-      color: red;
-    }
-  </code>
-  </li>
+<br><hr>
 
-  <li>
-  ID selectors (deonted with a #) will find an element with that particular id:
-
-    #thisDiv {
-    background-color: rgb(60, 179, 193);
-    }
-  </li>
-</ul>
-
-
-
-<hr>
 <h3>Sidenote:</h3>
+
 <p>You'll notice in the example listed above, three different values were used to assign color - hex code (#c13c3c), text-code ('red'), and rgb code (rgb(60, 179, 193)). Any of these can be used to set the color property. </p>
 
 <p>In addition to color, you can see the available name/property values that can be used to set styling rules at:</p>
@@ -65,24 +63,10 @@ selector {
 <div><a href="www.w3.org/TR/CSS21/propidx.html">www.w3.org/TR/CSS21/propidx.html</a><div>
 <hr>
 
+<p>Specifications for CSS features are maintained by the W3C (Worldwide Web Consortium).
+You can view these specification at:</p> 
+  <div><a href="http://www.w3.org/Style/CSS/">http://www.w3.org/Style/CSS/</a></div>
 
+<p>Not all specifications can be used in all browsers. You can check to see which selectors are supported across browsers by visiting:</p>
+  <div><a href="http://www.quirksmode.org/css/contents.html">http://www.quirksmode.org/css/contents.html</a></div>
 
-Note on Specs:
-
-CSS Specifications
-Specifications for CSS features are maintained by the W3C (Worldwide Web Consortium).
-You can view these specification at http://www.w3.org/Style/CSS/
-
-across browsers
-
-You can check out whether features are implemented in a browser by visiting:
-http://www.quirksmode.org/css/contents.html
-
-
-Colors:
-color picker
-color palletes:
-color varieties:
-
-</body>
-</html>
