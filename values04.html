@@ -7,56 +7,80 @@
 <body>
 
 
-CSS Syntax uses several different ways of assining values.
+<h1>Assigning Values</h1>
+<p>CSS Syntax uses several different ways of assining values.</p>
+
+<h3>Keywords</h3>
+<p>You can assign property values using keywords:</p>
+
+  <div><code>
+    div{
+      border: thin;
+    }
+  </code></div>
+
+<p>Dedicated keywords are available for only particular elements. For example, "thin" will set the size of a border, but not for fonts.</p>
+
+<h3>Physical measurments</h3>
+<p>You can indicate size of elements using physical measurements, such as in(inches), pt (points), pc (picas).</p>
+
+  <div><code>
+    body{
+      margin: 1in;
+    }
+  </code></div>
+
+<h3>Screen measurements</h3>
+<p>Likewise, you can assign size by screen measurements by specifying the px (pixels).</p>
+
+  <div><code>
+    div{
+      width: 150px;
+    }
+  </code></div>
+
+<h3>Relative Measurements</h3>
+<p>A popular way to set the size is using relative measurements, such as percentages (%) and em's. Relative measurements allow for your style to adapt to different devices and screens.</p>
+
+  <div><code>
+    .container{
+      border: 80%;
+    }
+  </code></div>
+
+<h3>Color codes</h3>
+<p>Color can be assigned by hex code (#ffffff), red-green-blue values (rgb(r,g,b,), and name-text ('green').</p>
+  <div><code>
+    font{
+      color: #ffffff;
+    }
+  </code></div>
+
+<h3>Fonts</h3>
+<p>Fonts are assigned using a case syntax ('font-family') that indicates the font you want to use, a generic font ending, and letterform.</p>
+  <div><code>
+    body{
+      font-family: "Times New Roman", Times, serif;
+    }
+  </code></div>
+
+<h3>Functional Notation</h3>
+<p>There are also functional values that can be used. For example, a background can be set to an image using <div><code>background: url(img_location)</code></div>.</p>
+  <div><code>
+    body{
+      background-image: url(image_location);
+    }
+  </code></div>
 
 
-Keywords
+<h3>Handy tools:</h3>
 
-thin, thick, larger
+<p>Here are some handy tools to help you get familiar with assigning values using CSS syntax:</p>
+<ul>
+  <li><div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a></div></li>
+  <li><div><a href="https://cssauthor.com/css-reference/">https://cssauthor.com/css-reference/</a></div></li>
+  <li><div><a href="https://fonts.google.com/">https://fonts.google.com/</a></div></li>
+</ul>
 
----------------------------
-
-Physical measure
-in(inches), pt (points), pc (picas)
-
----------------------------
-
-Screen measurements
-px (pixels)
-
----------------------------
-
-Relative Measurements
-
-%, em
-
----------------------------
-
-Color codes
-#FFF, #ffffff, rgb(rgb), name-text (limited)
----------------------------
-
-Fonts
-
-family
-style
-
-google awesome
-
----------------------------
-
-Functional Notation
-
-rgba(rgb + alpha)
-
-
-
-Handy tool:
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-
-A list of even more references:
-https://cssauthor.com/css-reference/
-
-
+</body></html>
 

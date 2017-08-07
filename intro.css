@@ -1,5 +1,6 @@
 body {
   background-color: #9cc1a1;
+  padding-bottom: 30px;
 }
 
 div code {
@@ -63,4 +64,8 @@ div a:hover{
 .italic {
   font-style: italic;
   font-weight: bold;
+}
+
+li {
+  padding: 8px;
 }
