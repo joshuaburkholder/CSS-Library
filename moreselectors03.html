@@ -1,56 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors (cont...)</title>
+  <link rel="stylesheet" type="text/css" href="intro.css">
+</head>
+<body>
 
 
+<h1>More Selectors</h1>
 
+<p>In addition to the selectors previously mentioned, CSS syntax also offers more complex patterns as selectors.</p>
 
+<h3>Descendant selector</h3>
 
---------------------------
-*descendant selector 
-
+<div><code>
 div p {
-	background-color: #aaddaa;
+  background-color: #aaddaa;
 }
+</code></div>
 
-applies to paragraphs descendent of (anywhere inside) a div
----------------------------
+<p>This rule will apply to the <code>&lt;p&gt;</code> tag. In this case, it will apply the specified property (color) to <code><p></code> tag anywhere inside a <code>&lt;div&gt;</code>.</p>
+<p>Descendent selectors are written by simply placing a space between the elements.</p>
 
-*child selector
+<h3>Child selector</h3>
 
+<div><code>
 div > p {
-	ba
+  background-color: #aaddaa;
 }
+</code></div>
 
-paragraphs that are a DIRECT child of an element
+<p>The child selector operates in a similar manner, except that it will target only &lt;p&gt; tags that are <span class="italic">direct child</span> of an element (in this case, the &lt;div&gt;). </p>
+<p>Child selectors are indicated by the &gt; operator between the elements.</p>
 
----------------------------
+<h3>Attribute selector</h3>
 
+<div><code>
+img[alt=logo]{ margin: 2px }
+</div></code>
 
-*attribute selector*
+<p>The attribute selector will search for and apply property values to all elements with a given attribute. In the example above.<p>
+<p>Attribute selectors are written by placing the targeted attribute in <code>[ ]</code>.</p>
 
-img[alt=logo]{
-	margin: 2px
-}
-
-will search html for elements with that attribute
-
----------------------------
-
-*psuedo class*
+<h3>Psuedo class</h3>
 
 a:visited{
-	color: #efefef;
+  color: #efefef;
 }
 
----------------------------
-Further Reference:
-www.w3.org/TR/css3-selectors/
+<p>CSS syntax also provides 'psuedo class' selectors. These selectors will apply properties to elements in a particular state. For instance, in the code above, the color will be applied to all links that have a 'pseudo-class' of 'visited.'</p>
+<p>Psuedo class selectors are written by appending the psuedo class to the element after a colon ( : ) .</p>
 
 ---------------------------
+<h4>Further Reference:</h4>
+<a href="www.w3.org/TR/css3-selectors/">www.w3.org/TR/css3-selectors/</a>
 
-Inheritance
-
-
-Cascading
-
-
-Priority
-
+---------------------------
