@@ -1,0 +1,97 @@
+
+
+Styles for HTML can come from different sources:
+
+	default.html
+		Author Stylesheet
+			<link>
+			@import
+		User Stylesheet
+			modern web browsers allow users to create their own stylesheet that will be applied to every view
+			increase accessibility
+		Default Stylesheet (User Agent Styles)
+			Default rules that are set by the browser
+
+
+The Cascade 
+	applies a weight to stylesheets to mitigate and assign properties when several rules could apply to a single element
+
+	Author Sheet +++
+	User Sheet ++
+	Default + 
+
+	*!important can be used by the User Stylesheet to override Authored Stylesheet rules
+
+	user agent style sheets
+		IE: iecss.com
+		Firefox:
+		Chrome:
+		Edge:
+		Safari:
+
+
+Ordering
+	conflicting rules from the same source
+
+		Conflicting rules coming from the same source: CSS applies the last rule defined
+
+		example:
+			body {
+				background-color: blue;
+			}
+
+			body {
+				background-color: black;
+			}
+
+		Also applies wHen you use multiple stylesheets
+
+			<link src="style1.css"> (defines body background-color as blue)
+			<link src="style2.css"> (defines body background-color as black)
+			*style2.css rules will override style1.css when a conflicting rules are present (body background-color will be black)
+
+		 or use @import
+
+		  [style1.css]
+		 	@import url("style2.css"); (imports the rule that defines the background-color of body as black)
+
+		 	body{
+		 		background-color: blue;
+		 	}
+
+		 	(The body background-color will be blue)
+
+
+Note: Developer tools can be a useful way of tracing how style rules are being applied within the HTML DOM.
+
+CSS Reset
+	CSS resets are not required, but can be used to override the default styles from a User Agent stylesheets.
+	This allows developers to begin from the same initial style across browsers (which may have different default values).
+
+	Simple Reset
+		*{ margin: 0; padding: 0; }
+
+	Things to keep in mind:
+		Every CSS rule that is zeroed should be redefined. If a style is not redefined, it could cause issues, and could cause issues for users who use keyboard navigation.
+
+
+	Templates
+		meyerweb.com/eric/tools/css/reset
+
+		More information and examples:
+		https://www.webpagefx.com/blog/web-design/css-reset-stylesheets/
+
+	NPM Packages:
+		Normalize.css: npm install normalize.css
+
+
+
+SPECIFICITY
+
+
+
+
+
+
+
+
