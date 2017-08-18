@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Introduction to CSS </title>
+  <style> body{background-color: #e5e5e5}</style>
+  <link rel="stylesheet" type="text/css" href="intro.css">
+<!--   <style> body{background-color: green}</style> -->
+
+</head>
+<body>
+
+<h1>Styling Methods</h1>
+
+  <h3>Inline Styling</h3>
+   <p>It is possible to style each HTML element with inline styling. For example, 
+
+<div>
+  <code> &lt[element name] STYLE="[CSS property]:[property value]"&gt </code>
+</div>
+
+  <p>However, this is not always the best approach. In order to make changes, one would have to go through the entire HTML markup and change the styling for each individual element.</p>
+
+  <p>This approach also does not give allow you to use all the wonders of CSS. A better approach would be to only use inline styling for overriding styling rules on a case-by-case basis. (Or just don't do it. Seriously.)</p>
+
+<h2>Enter CSS!</h2>
+
+  <p>CSS (Cascading Style Sheets) allow web developers to separate the design aspects of a web site from the HTML markup.</p>
+
+<p>This is considered a best practice in development, and there are a couple of different approaches.</p>
+
+<h3>Embedded Styling</h3>
+  <p>Embedded styling allows the presentation rules to be embedded into the HTML <code>&lthead&gt.</p>
+  <p>Notice the "presentation rule" located in the <code> &lthead&gt</code> tag, just under the &lttitle&gt.</code> You'll see the following code, which gives us this great grey background:
+  <div id="presentation_rule">
+    <code>&ltstyle&gt body{background: #d3d3d3}&lt/style&gt</code>
+  </div>
+    <p>This method allows you to access to all the wonders of CSS, but it's application is limited to a single HTML page.</p>
+
+<h3>External Style Sheets</h3>
+    <p>Extneral style sheets create a cleaner way to approach designing a webpage and also allow you to create consistency in design across multple pages.</p>
+    
+    <p>In the <code> &lthead&gt</code> tag, following the &/style&gt tag, you'll see the following code:</p>
+    <div id="presentation_rule">
+      <code>&ltlink rel="stylesheet" type="text/css" href="intro.css"&gt</code>
+    </div>
+    <p>This links the HTML file to an external style sheet, intro.css. You'll notice that is where we are defining properties for <code>div, h2</code>, etc. This method gives us access to the full-range of CSS capabilities, as well as creates a clean way for us to apply styling rules across multiple pages.</p>
+
+<h3>Higher Precedence</h3>
+    <p>One important thing to consider is the precedence given to these methods. Because specificity matters in how styling is rendered (more on that later), embedded styles have a higher precedence than external styles. So, if there are equivalent rules given, the embedded style will take precedence over the external. Likewise, inline styling will have a higher precedence over embedded styling.</p>
+
+    <h4>Order of precedence, from highest to lowest</h4>
+    <div>Inline Styling &gt Embedded Styling &gt External Style Sheet</div>
+
+</body>
+</html>
